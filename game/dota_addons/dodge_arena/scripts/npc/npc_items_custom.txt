@@ -1,0 +1,625 @@
+"DOTAAbilities"
+{ 
+	//=================================================================================================================
+	// custom force staff
+	//=================================================================================================================
+	"item_force_staff_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"102"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_CUSTOM"
+		"FightRecapLevel"				"1"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"BaseClass"						"item_force_staff"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"3.0"
+
+		"AbilityManaCost"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"push_length"			"1000"
+			}
+		}	
+	}
+
+	//=================================================================================================================
+	// Bag of Gold
+	//=================================================================================================================
+	"item_bag_of_gold"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityName"					"item_bag_of_gold"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"Model"							"models/props_gameplay/gold_coin001.vmdl"
+		"ItemKillable"					"0"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"100"
+		"AbilityCastPoint"				"0.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"99999"
+		"ItemPurchasable"				"0"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemStackable"					"1"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemPermanent"					"0"
+		"ItemInitialCharges"			"0"
+		"ItemKillable"					"0"
+		"ItemCastOnPickup"				"1"
+	}
+
+	//=================================================================================================================
+	// custom orchid
+	//=================================================================================================================
+
+	"item_orchid_custom"
+	{
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"BaseClass"						"item_orchid"
+		"ID"							"815"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		
+		//Stats
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.0"
+		"AbilityManaCost"				"0"
+		"AbilityCooldown"				"12"
+		
+		"ItemCost"					"1000"
+		"ItemDisassembleRule"		"DOTA_ITEM_DISASSEMBLE_NEVER"
+		"ItemShopTags"				""
+		"ItemQuality"				"common"
+		"ItemAliases"				"Silence"
+		"ItemShareability"			"ITEM_NOT_SHAREABLE"
+		"ItemSellable"				"0"
+		
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"silence_duration"		"5"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"silence_damage_percent"	"0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// custom eul
+	//=================================================================================================================
+	"item_cyclone_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"100"
+		"BaseClass"						"item_cyclone"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
+		"FightRecapLevel"				"1"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"875"
+		"AbilityCastPoint"				"0.0"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"800"
+		"ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"cyclone euls;eul's scepter of divinity"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"40"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"cyclone_duration"		"2.5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_tooltip"		"875"
+			}
+		}
+	}
+	
+	//=================================================================================================================
+	// custom refresher
+	//=================================================================================================================
+	"item_refresher_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"110"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"BaseClass"						"item_refresher"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"15.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"1500"
+		"ItemShopTags"					"regen_health;regen_mana;hard_to_tag"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"refresher orb"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"0"
+			}		
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}		
+		}
+	}
+	//=================================================================================================================
+	// Black King Bar custom
+	//=================================================================================================================
+	"item_black_king_bar_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"116"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"BaseClass"						"item_black_king_bar"
+		"FightRecapLevel"				"2"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15 15 15 15 15 15"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"1600"
+		"ItemShopTags"					"str;damage;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"bkb;black king bar"
+		"ItemSellable"					"1"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"3.0 2.0 2.0 2.0 2.0 2.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"max_level"				"6"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"model_scale"			"30"     // Percentage over model scale
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Shiva's custom
+	//=================================================================================================================
+	"item_shivas_guard_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"119"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL"
+		"BaseClass"						"item_shivas_guard"
+		"FightRecapLevel"				"1"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"1500"
+		"ItemShopTags"					"int;armor;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"shiva's guard"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"900"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_attack_speed"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_damage"			"0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_movement_speed"	"-40"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"blast_debuff_duration"	"2.0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_radius"			"900"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"blast_speed"			"350"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Sphere custom
+	//=================================================================================================================
+	"item_sphere_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"123"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"BaseClass"						"item_sphere"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"FightRecapLevel"				"1"
+
+		
+		"AbilityCastRange"				"700"
+		"AbilityCooldown"				"13.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"2000"
+		"ItemShopTags"					"regen_health;regen_mana;str;agi;int;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"ls;linken's sphere"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana_regen"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"		"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"block_cooldown"		"3.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Manta custom
+	//=================================================================================================================
+	"item_manta_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"147"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"BaseClass"						"item_manta"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"15.0"
+		"AbilityCastPoint"				"0.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"1300"
+		"ItemShopTags"					"agi;str;int;attack_speed;move_speed;hard_to_tag"
+		"ItemQuality"					"epic"
+		"ItemAliases"					"manta style"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"10"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"images_count"			"2"
+			}			
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_illusion_duration"			"5"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"images_do_damage_percent_melee"	"0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_damage_outgoing_melee"			"0"
+			}	
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"images_take_damage_percent_melee"	"100"
+			}
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_damage_incoming_melee_total_pct"			"100"
+			}			
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"images_do_damage_percent_ranged"	"0"
+			}
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_damage_outgoing_ranged"			"0"
+			}
+			"14"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"images_take_damage_percent_ranged"	"100"
+			}
+			"15"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_damage_incoming_ranged_total_pct"			"100"
+			}
+			"16"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown_melee"		"13"
+			}
+			"17"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cooldown_ranged_tooltip"		"13"
+			}
+			"18"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"invuln_duration"		"0.5"
+			}
+			"19"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"1000"
+			}			
+		}
+	}
+
+	//=================================================================================================================
+	// Rod of Atos custom
+	//=================================================================================================================
+	"item_rod_of_atos_custom"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"206"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"BaseClass"						"item_rod_of_atos"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"FightRecapLevel"				"1"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12"
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.0"
+
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		"ItemCost"						"1100"
+		"ItemShopTags"					"int;regen_health"
+		"ItemQuality"					"rare"
+		"ItemAliases"					"rod of atos"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{			
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_intellect"		"0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"				"0"
+			}		
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"slow"				"60"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0"
+			}
+		}
+	}
+}
